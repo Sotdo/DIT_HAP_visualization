@@ -12,23 +12,14 @@ from src.link_with_known_information import display_basic_information
 
 
 # Load data
-# insertion_LFCs_file = "./data/0_raw/insertions_LFC.csv"
-# gene_level_LFCs_file = "./data/0_raw/GWMs.csv"
-# insertion_annotations_file = "./data/0_raw/DIT_HAP.annotated.csv"
-# timepoint_file = "./data/0_raw/samples_timepoints.csv"
+insertion_LFCs_file = "./data/0_raw/insertions_LFC.csv"
+gene_level_LFCs_file = "./data/0_raw/GWMs.csv"
+insertion_annotations_file = "./data/0_raw/DIT_HAP.annotated.csv"
+timepoint_file = "./data/0_raw/samples_timepoints.csv"
 
-# gene_description_file = "./references/pombase_annotation/gene_IDs_names_products.tsv"
-# gene_essentiality_file = "./references/Hayles_2013_OB_merged_categories.xlsx"
-# genome_region_file = "./references/Genome_regions_CDS_intron_IGR_annotated.bed"
-
-insertion_LFCs_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/data/0_raw/insertions_LFC.csv"
-gene_level_LFCs_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/data/0_raw/GWMs.csv"
-insertion_annotations_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/data/0_raw/DIT_HAP.annotated.csv"
-timepoint_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/data/0_raw/samples_timepoints.csv"
-
-gene_description_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/references/pombase_annotation/gene_IDs_names_products.tsv"
-gene_essentiality_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/references/Hayles_2013_OB_merged_categories.xlsx"
-genome_region_file = "/data/c/yangyusheng_optimized/DIT_HAP_visualization/Streamlit_DEseq2/references/Genome_regions_CDS_intron_IGR_annotated.bed"
+gene_description_file = "./references/pombase_annotation/gene_IDs_names_products.tsv"
+gene_essentiality_file = "./references/Hayles_2013_OB_merged_categories.xlsx"
+genome_region_file = "./references/Genome_regions_CDS_intron_IGR_annotated.bed"
 
 (
     insertion_LFCs,
