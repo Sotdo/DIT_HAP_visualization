@@ -54,8 +54,10 @@ for query in query_sysIDs:
     
     igene = st.container()
     sysID, gene_col = display_basic_information(igene, query, merged_gene_info)
-
-    insertion_GMs, gene_level_GMs, insertion_last_tp = get_insertions_in_genes(sysID, insertion_annotations, insertion_LFCs, gene_level_LFCs, timepoints)
-    combined_plot = combine_plots(insertion_GMs, gene_level_GMs, insertion_last_tp)
-    gene_col.altair_chart(combined_plot, use_container_width=True, theme=None)
+    if sysID in gene_level_LFCs.index:
+        insertion_GMs, gene_level_GMs, insertion_last_tp = get_insertions_in_genes(sysID, insertion_annotations, insertion_LFCs, gene_level_LFCs, timepoints)
+        combined_plot = combine_plots(insertion_GMs, gene_level_GMs, insertion_last_tp)
+        gene_col.altair_chart(combined_plot, use_container_width=True, theme=None)
+    else:
+        st.warning(f"No data found for {query}")
     igene.divider()
